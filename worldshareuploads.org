@@ -5,7 +5,7 @@
    - ~https://americanjewishhistsocietynewyork.share.worldcat.org~
      - ~mignaultj~
      - ~Ajhs1516!~
-   - login using these credentials
+   - Login using these credentials
      [[./ws_images/login_screen.png]]
    - This brings you to the main screen. From here you can create
      collections and manage file uploads and downloads.
