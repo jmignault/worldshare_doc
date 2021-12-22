@@ -14,7 +14,7 @@
 ** Creating a collection
    - Open the *"Metadata"* tab
    - Open the *"Collection Manager"* dropdown
-     [[./ws_images/collection_manager.png]]
+   -  [[./ws_images/collection_manager.png]]
    - Click the *"Create a Collection"* button
      [[./ws_images/create_collection.png]]
    - In the *"Collection Type"* menu, select *"Data Sync Collection"*
@@ -28,7 +28,9 @@
 ** Exporting files for upload
      - Records should be exported from Aleph using *Services ->
        Download Machine Readable Records (print-03)*
+       [[./ws_images/print_03_menu.png]]
        - Export records as *"MARC xml"*
+	 [[./ws_images/print_03_output.png]]
 	 - Do NOT export as *"MARC xml with alphanumeric tags."* These
            tags are proprietary Ex Libris fields which are not in the
            MARC standard and will cause the file to be rejected.
