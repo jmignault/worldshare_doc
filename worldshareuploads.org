@@ -1,0 +1,77 @@
+#+OPTIONS: num:nil toc:nil
+* Uploading records to WorldShare
+
+** URL and credentials
+   - ~https://americanjewishhistsocietynewyork.share.worldcat.org~
+     - ~mignaultj~
+     - ~Ajhs1516!~
+   - login using these credentials
+     [[./ws_images/login_screen.png]]
+   - This brings you to the main screen. From here you can create
+     collections and manage file uploads and downloads.
+     [[./ws_images/main_screen.png]]
+
+** Creating a collection
+   - Open the *"Metadata"* tab
+   - Open the *"Collection Manager"* dropdown
+     [[./ws_images/collection_manager.png]]
+   - Click the *"Create a Collection"* button
+     [[./ws_images/create_collection.png]]
+   - In the *"Collection Type"* menu, select *"Data Sync Collection"*
+     - Leave *"database-only collection"* unchecked
+     - Click *"Create"*
+     - In the *"Data Sync Type"* menu, select *"Bibliographic"*
+     - Click *"Create"*
+   - Fill out the details in the *"Collection Details"* screen
+     [[./ws_images/collection_details.png]]
+
+** Exporting files for upload
+     - Records should be exported from Aleph using *Services ->
+       Download Machine Readable Records (print-03)*
+       - Export records as *"MARC xml"*
+	 - Do NOT export as *"MARC xml with alphanumeric tags."* These
+           tags are proprietary Ex Libris fields which are not in the
+           MARC standard and will cause the file to be rejected.
+
+** Preparing files for upload
+   + File naming convention
+     - See [[https://help.oclc.org/Metadata_Services/WorldShare_Collection_Manager/Data_sync_collections/Create_an_ongoing_data_sync_collection/Bibliographic_collection/30Upload_files_inMy_Files?sl=en#File_naming_conventions][File naming conventions - OCLC Support]]
+     - the filename MUST follow this naming convention:
+       - Elements are separated by periods
+       - The first element is the collection ID. ex: 1039980
+       - The second element is the institution symbol ex: MAJV2 (AJHS)
+       - the third element is a name of your choosing, which should
+         have some relevance to the records being uploaded
+       - followed by the file extension, in this case xml
+     - An example filename would be ~1039980.MJAV2i77.xml~
+   + Editing the file
+     - Before uploading, you must make the following edits to the file:
+       - The export will have the schema definitions listed before
+	 each ~<record>~ element. Remove them from the individual
+	 ~<record>~ elements and make sure they are only in the
+	 top-level element.
+       - Delete the blank line separating records.
+       - Move the 001 control field from the end of each record to the
+         beginning of the record.
+
+** Uploading a data file
+   + Open the *"Metadata"* tab
+   + Open the *"My Files"* dropdown
+     [[./ws_images/my_files.png]]
+     - 2 buttons are revealed, *"Uploads"* and *"Downloads"*
+   + Click the *"Uploads"* button
+     - An area called *"Upload File"* with a *"Browse..."* button appears over a list of previously uploaded files.
+   + Uploading
+     [[./ws_images/uploads.png]]
+     - Once the file is ready click the *"Browse..."* button in the Upload
+       File area and choose the prepared file
+     - Click *"Data sync bibliographic"*
+     - Click *"Upload"*
+     - The file uploads and appears in the list of files below.
+       - If this is the first addition to a new collection, the Data
+         Sync team will review the file and process the records
+         manually. You will be notified when the records are ready.
+         You will also be notified of any issues they encountered.
+       - Otherwise, OCLC's Data Sync team will automatically process the file and
+         add the records to WorldCat.
+
