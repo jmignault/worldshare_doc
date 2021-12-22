@@ -68,7 +68,7 @@
      - Click *"Data sync bibliographic"*
      - Click *"Upload"*
      - The file uploads and appears in the list of files below.
-       - If this is the first addition to a new collection, the Data
+       - If this is the *first addition to a new collection,* the Data
          Sync team will review the file and process the records
          manually. You will be notified when the records are ready.
          You will also be notified of any issues they encountered.
